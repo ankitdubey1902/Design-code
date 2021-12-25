@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Code - Index</title>
+    <title>Design Code</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </head>
   <body>
+    <!-- header -->
     <div id="container">
       <div class="header">
-        <h2>DC</h2>
+        <h2 id="logo">Design Code</h2>
         <div class="menu">
           <div class="menu-list">
             <li><a href="#/">Home</a></li>
@@ -20,9 +22,38 @@
         </div>
       </div>
     </div>
-    <div class="main">
-      <span></span>
-    </div>    
+    <!-- hero-section -->
+    <div class="wrapper">
+      <div class="main">
+        <div class="left">
+          <h3>Make your web, app & dashboard with our acency.</h3>
+          <p>
+            We have a grate experience of buiding amazing webiste ui/ux design.
+            We have design more than 1000+ brand with are experience.
+          </p>
+        </div>
+        <div class="right">
+          <div class="img" id="img">
+            <div data-depth="0.20">
+              <img
+                class="img-hero"
+                src="images/hero-img2.jpg"
+                alt="illustration"
+                aria-label="illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about-section -->
+    <div class="wrapper">
+      <div class="about">
+        <div class="about-heading">
+          <h3>About us</h3>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

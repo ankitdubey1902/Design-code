@@ -5,11 +5,26 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* header */
+#logo {
+  transition: all 5s;
+}
+
 #container {
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   justify-content: center;
   position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
   /* border-bottom: 1px solid grey; */
   /* -webkit-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
   -moz-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
@@ -34,26 +49,95 @@
   font-size: 1rem;
 }
 
-.menu-list li a{
-    text-decoration: none;
-    color: #000000;
-  }
-  
-.box-shad {    
-    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-    -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25); 
+.menu-list li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.box-shad {
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 }
 
 .main {
-    height: 200vh;
+  margin-top: 70px;
+  height: calc(100vh - 65px);
+  display: flex;
+  width: 80%;
 }
 
+.img {
+  z-index: -1;
+}
+
+.img-hero {
+  width: 1000px;
+}
+.left,
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.left h3 {
+  font-size: 56px;
+}
+
+/* about section  */
+.about {
+  background-color: #deedff;
+  width: 80%;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+.about-heading {
+  font-size: 36px;
+  margin-top: 36px;
+}
+/* for mobile */
 @media only screen and (max-width: 600px) {
-    .header {        
-        margin: 10px 0px;
-      } 
-      .menu-list li {
-        font-size: 0.8rem;
-      }
+  .header {
+    margin: 10px 0px;
   }
+  .menu-list li {
+    font-size: 0.8rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about {    
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+    width: 80%;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .left h3 {
+    margin-top: 28px;
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .left p {
+    margin-top: 28px;
+  }
+  .img-hero {
+    max-width: 300px;
+  }
+  #logo {
+    font-size: 18px;
+  }
+}
